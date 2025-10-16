@@ -1,0 +1,15 @@
+
+header {
+    position: sticky;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body-centralizar {
+    display: grid;
+    margin: 0 auto;
+
+}
