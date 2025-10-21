@@ -1,6 +1,7 @@
 
 :root {
     --header-bg: rgb(10, 32, 156);
+    --header-outline: rgb(7, 21, 99);
     --header-color: rgb(192, 201, 254);
     --header-link: rgb(255, 244, 179);
 }
@@ -16,33 +17,33 @@
 header {
     width: 100%;
     padding: .5em 0;
+    margin-bottom: 1em;
 
     background-color: var(--header-bg);
     color: var(--header-color);
 
-    display: grid;
-    grid-template-columns: 33% 50%;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-header * {
-    display: inline-block;
-    vertical-align: middle;
+    outline: 4px solid var(--header-outline);
+    border-radius: 8px;
 }
 
 .header-titulo {
-    font-size: large;
-    margin-left: 2em;
+    font-size: 1.5em;
+    margin-left: 1em;
 }
 
-/*.header-links {
-    position: absolute;
-    right: 1em;
-}*/
+.header-links {
+    height: max-content;
+}
 
 .header-links a {
     color: var(--header-link);
+
     text-decoration: none;
-    margin: 0 1em;
+    margin-right: 1em;
 }
 
 .centralizar {
